@@ -47,7 +47,7 @@ public class Main {
         if (places < 60) {
             System.out.println("В вагоне есть сидячее место.");
         }
-        if (places > 60){
+        if (places > 60 && places < 102){
             System.out.println("В вагоен нет сидячих мест.");
         } else {
             if (places >= 102){
@@ -59,11 +59,11 @@ public class Main {
         int two = 10;
         int three = 15;
         if (one < three && three > two) {
-            System.out.println("Число 15 больше остальных");
+            System.out.println("Число " + three + " больше остальных");
         } else if (three < two && two > one) {
-            System.out.println("Число 10 больше остальных");
+            System.out.println("Число " + two + " больше остальных");
         } else {
-            System.out.println("Число 5 больше остальных");
+            System.out.println("Число " + one + " больше остальных");
         }
     }
 }
